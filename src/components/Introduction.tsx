@@ -14,10 +14,10 @@ export const Introduction: React.FC<IntroductionProps> = ({ onDiscoverStory }) =
           {/* Left Column: Large Premium Indian Food Photograph with Clip-path Reveal */}
           <div className="lg:col-span-6 relative">
             <motion.div
-              initial={{ clipPath: 'inset(100% 0 0 0)', opacity: 0 }}
-              whileInView={{ clipPath: 'inset(0% 0 0 0)', opacity: 1 }}
-              viewport={{ once: true, margin: '-100px' }}
-              transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="relative rounded-[8px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] group"
             >
               <img
