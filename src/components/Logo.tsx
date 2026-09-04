@@ -1,0 +1,286 @@
+import React from 'react';
+
+interface LogoProps {
+  className?: string;
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
+  variant?: 'badge' | 'full' | 'horizontal';
+  withBackground?: boolean;
+}
+
+export const Logo: React.FC<LogoProps> = ({
+  className = '',
+  size = 'md',
+  withBackground = false
+}) => {
+  // Height & responsive sizing
+  const sizeMap = {
+    xs: { height: 32 },
+    sm: { height: 46 },
+    md: { height: 64 },
+    lg: { height: 98 },
+    xl: { height: 148 },
+    '2xl': { height: 215 }
+  };
+
+  const dim = sizeMap[size] || sizeMap.md;
+
+  return (
+    <div
+      className={`relative inline-flex items-center justify-center select-none transition-transform duration-300 ${
+        withBackground
+          ? 'bg-[#000000] p-4 rounded-[6px] border border-[#D4AF37]/25 shadow-[0_8px_30px_rgba(0,0,0,0.85)]'
+          : ''
+      } ${className}`}
+      style={{ maxHeight: dim.height }}
+      aria-label="Vedha – Chez Cuisine Indienne Official Logo"
+    >
+      <svg
+        viewBox="0 0 1000 500"
+        className="w-auto h-full max-w-full drop-shadow-[0_2px_14px_rgba(0,0,0,0.9)]"
+        style={{ height: dim.height }}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+      >
+        <defs>
+          {/* Rich Multi-Stop Polished Metallic Gold Gradient exactly matching the master logo */}
+          <linearGradient id="vedhaMasterGold" x1="0%" y1="0%" x2="100%" y2="85%">
+            <stop offset="0%" stopColor="#FFF8D6" />
+            <stop offset="15%" stopColor="#FCE182" />
+            <stop offset="35%" stopColor="#DEB03C" />
+            <stop offset="58%" stopColor="#F7DA76" />
+            <stop offset="80%" stopColor="#B8851E" />
+            <stop offset="100%" stopColor="#7B520A" />
+          </linearGradient>
+
+          {/* Horizontal Linear Gradient for Top Crossbar */}
+          <linearGradient id="vedhaMasterBar" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#A57314" />
+            <stop offset="12%" stopColor="#F7D875" />
+            <stop offset="30%" stopColor="#FFF9DE" />
+            <stop offset="50%" stopColor="#ECC558" />
+            <stop offset="75%" stopColor="#FCE389" />
+            <stop offset="90%" stopColor="#D9A833" />
+            <stop offset="100%" stopColor="#91600E" />
+          </linearGradient>
+
+          {/* Deep 3D Cast Metal Shadow & Highlight Filter */}
+          <filter id="vedhaDepth" x="-10%" y="-10%" width="125%" height="125%">
+            <feDropShadow dx="0" dy="3" stdDeviation="3" floodColor="#000000" floodOpacity="0.95" />
+            <feDropShadow dx="0" dy="0" stdDeviation="1.5" floodColor="#FFF8D6" floodOpacity="0.35" />
+          </filter>
+        </defs>
+
+        <g filter="url(#vedhaDepth)">
+          {/* ======================================================== */}
+          {/* 1. TOP CREST: TWIN SOLID GOLD CURVED HORNS / FEATHERS    */}
+          {/* ======================================================== */}
+          {/* Lower Horn originating from 'd' stem (X: 520 to 536, Y: 160) */}
+          <path
+            d="M 536 160
+               C 536 116, 518 82, 480 58
+               C 446 38, 400 36, 335 48
+               C 375 50, 412 62, 436 82
+               C 460 102, 474 128, 478 160
+               L 536 160
+               Z"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* Upper Horn originating from 'h' stem (X: 564 to 580, Y: 160) */}
+          <path
+            d="M 580 160
+               C 580 104, 552 64, 510 36
+               C 468 12, 412 10, 305 16
+               C 372 20, 428 34, 464 56
+               C 502 80, 522 116, 526 160
+               L 580 160
+               Z"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* ======================================================== */}
+          {/* 2. SOLID HORIZONTAL GOLDEN CROSSBAR                      */}
+          {/* ======================================================== */}
+          <polygon
+            points="120,160 880,160 868,175 132,175"
+            fill="url(#vedhaMasterBar)"
+          />
+
+          {/* ======================================================== */}
+          {/* 3. LETTER 'v' WITH SWAN-NECK FLOURISH (SOLID SHAPE)      */}
+          {/* ======================================================== */}
+          <path
+            d="M 134 200
+               C 142 216, 156 220, 168 208
+               C 178 198, 190 188, 200 188
+               L 222 320
+               L 238 320
+               L 278 175
+               L 260 175
+               L 230 298
+               L 210 184
+               C 196 180, 172 184, 156 196
+               C 148 200, 142 201, 134 200
+               Z"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* ======================================================== */}
+          {/* 4. LETTER 'e' (SOLID LOWERCASE WITH INNER EYE COUNTER)   */}
+          {/* ======================================================== */}
+          <path
+            fillRule="evenodd"
+            d="M 416 248
+               C 416 206, 390 175, 355 175
+               C 314 175, 288 207, 288 250
+               C 288 294, 316 322, 355 322
+               C 382 322, 404 310, 414 290
+               L 398 281
+               C 390 296, 374 306, 355 306
+               C 326 306, 306 284, 304 256
+               L 416 256
+               C 416 253, 416 250, 416 248
+               Z
+               M 305 242
+               C 308 214, 329 191, 355 191
+               C 380 191, 398 214, 400 242
+               L 305 242
+               Z"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* ======================================================== */}
+          {/* 5. LETTER 'd' (BOWL + STEM + LEFT-SWOOPING SABER TUSK)   */}
+          {/* ======================================================== */}
+          {/* 'd' Circular Bowl on Left Side */}
+          <path
+            fillRule="evenodd"
+            d="M 520 188
+               L 520 306
+               C 508 316, 492 322, 474 322
+               C 434 322, 405 290, 405 248
+               C 405 205, 434 175, 474 175
+               C 492 175, 508 180, 520 188
+               Z
+               M 520 206
+               C 508 196, 492 191, 474 191
+               C 447 191, 424 214, 424 248
+               C 424 282, 447 305, 474 305
+               C 492 305, 508 299, 520 290
+               L 520 206
+               Z"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* 'd' Vertical Stem from Crossbar to Baseline */}
+          <rect
+            x="520"
+            y="160"
+            width="16"
+            height="160"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* 'd' Sweeping Saber Tusk Descender: curves gently LEFT and tapers to sharp point */}
+          <path
+            d="M 536 320
+               C 536 366, 516 404, 482 432
+               C 502 402, 520 364, 520 320
+               Z"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* ======================================================== */}
+          {/* 6. LETTER 'h' (STEM + RIGHT-SWOOPING TUSK + ARCH & LEG)  -->
+          {/* ======================================================== */}
+          {/* 'h' Vertical Stem from Crossbar to Baseline */}
+          <rect
+            x="564"
+            y="160"
+            width="16"
+            height="160"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* 'h' Sweeping Saber Tusk Descender: curves gently RIGHT and tapers to sharp point */}
+          {/* Symmetrically flaring outward relative to 'd's descender! */}
+          <path
+            d="M 564 320
+               C 564 366, 584 404, 618 432
+               C 598 402, 580 364, 580 320
+               Z"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* 'h' Shoulder Arch and Right Vertical Leg */}
+          <path
+            fillRule="evenodd"
+            d="M 580 236
+               C 592 196, 618 175, 646 175
+               C 674 175, 694 194, 694 228
+               L 694 320
+               L 678 320
+               L 678 232
+               C 678 208, 665 192, 646 192
+               C 625 192, 604 212, 580 248
+               Z"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* ======================================================== */}
+          {/* 7. LETTER 'a' (SOLID BOWL, RIGHT STEM, & BASE SERIF)     */}
+          {/* ======================================================== */}
+          {/* 'a' Circular Bowl on Left Side */}
+          <path
+            fillRule="evenodd"
+            d="M 806 188
+               L 806 306
+               C 794 316, 778 322, 760 322
+               C 720 322, 692 290, 692 248
+               C 692 205, 720 175, 760 175
+               C 778 175, 794 180, 806 188
+               Z
+               M 806 206
+               C 794 196, 778 191, 760 191
+               C 733 191, 710 214, 710 248
+               C 710 282, 733 305, 760 305
+               C 778 305, 794 299, 806 290
+               L 806 206
+               Z"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* 'a' Vertical Stem with Base Serif Flick */}
+          <path
+            d="M 806 160
+               L 822 160
+               L 822 312
+               L 834 312
+               L 834 320
+               L 806 320
+               Z"
+            fill="url(#vedhaMasterGold)"
+          />
+
+          {/* ======================================================== */}
+          {/* 8. SUBTITLE: CHEZ CUISINE INDIENNE                       */}
+          {/* ======================================================== */}
+          <text
+            x="500"
+            y="472"
+            fontFamily="'Cinzel', 'Playfair Display', 'Times New Roman', serif"
+            fontSize="28"
+            fontWeight="600"
+            letterSpacing="12"
+            fill="url(#vedhaMasterGold)"
+            textAnchor="middle"
+            opacity="0.98"
+          >
+            CHEZ CUISINE INDIENNE
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};

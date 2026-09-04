@@ -1,0 +1,6 @@
+{
+  "name": "Vedha – Chez Cuisine Indienne",
+  "description": "Authentic Indian cuisine crafted with tradition and presented with modern elegance in Canada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
