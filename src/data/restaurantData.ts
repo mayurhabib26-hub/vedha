@@ -59,7 +59,7 @@ export const SIGNATURE_DISHES: MenuItem[] = [
     description: 'Lamb cooked with mint, yogurt and Indians spices.',
     price: 18.99,
     category: 'Lamb Curry',
-    image: 'https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://images.unsplash.com/photo-1708782344490-9026aaa5eec7?auto=format&fit=crop&w=1000&q=80',
     tags: ['Halal', 'Gluten-Friendly', 'Chef Special'],
     isSignature: true,
     spiceLevel: 2,
@@ -264,7 +264,7 @@ export const FULL_MENU: MenuItem[] = [
     description: 'Crispy golden potato fries served with seasoning.',
     price: 5.99,
     category: 'Appetizers',
-    image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=800&q=80',
     tags: ['Vegetarian', 'Vegan'],
     spiceLevel: 0
   },
@@ -274,7 +274,7 @@ export const FULL_MENU: MenuItem[] = [
     description: 'Crunchy battered onion rings, deep-fried to perfection.',
     price: 5.99,
     category: 'Appetizers',
-    image: 'https://images.unsplash.com/photo-1639024471285-0afc3855f485?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&fit=crop&w=800&q=80',
     tags: ['Vegetarian'],
     spiceLevel: 0
   },
@@ -567,7 +567,7 @@ export const FULL_MENU: MenuItem[] = [
     description: 'Tender chicken cooked in a creamy sauce with nuts, mild spices, and cream.',
     price: 17.99,
     category: 'Non-Veg Curry',
-    image: 'https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1707448829764-9474458021ed?auto=format&fit=crop&w=800&q=80',
     tags: ['Halal', 'Gluten-Friendly'],
     spiceLevel: 1
   },
@@ -638,7 +638,7 @@ export const FULL_MENU: MenuItem[] = [
     description: 'Chicken cooked in sweet pickle & indian spices with a tangy taste of mango.',
     price: 16.99,
     category: 'Non-Veg Curry',
-    image: 'https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1567529854338-fc097b962123?auto=format&fit=crop&w=800&q=80',
     tags: ['Halal'],
     spiceLevel: 1
   },
@@ -672,7 +672,7 @@ export const FULL_MENU: MenuItem[] = [
     description: 'Lamb simmered in a sauce of spices, ginger and garlic.',
     price: 18.99,
     category: 'Lamb Curry',
-    image: 'https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1652545296893-ff9227b3512e?auto=format&fit=crop&w=800&q=80',
     tags: ['Halal', 'Gluten-Friendly'],
     spiceLevel: 2
   },
@@ -692,7 +692,7 @@ export const FULL_MENU: MenuItem[] = [
     description: 'Lamb cooked with bell peppers, onions, tomatoes, ginger, garlic, 35% cream and indian spices.',
     price: 18.99,
     category: 'Lamb Curry',
-    image: 'https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1652545297020-f5e8ad779eb4?auto=format&fit=crop&w=800&q=80',
     tags: ['Halal', 'Gluten-Friendly'],
     spiceLevel: 2
   },
@@ -702,7 +702,7 @@ export const FULL_MENU: MenuItem[] = [
     description: 'Lamb cooked with mint, yogurt and Indians spices.',
     price: 18.99,
     category: 'Lamb Curry',
-    image: 'https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1708782344490-9026aaa5eec7?auto=format&fit=crop&w=800&q=80',
     tags: ['Halal', 'Gluten-Friendly', 'Chef Special'],
     isSignature: true,
     spiceLevel: 2
@@ -723,7 +723,7 @@ export const FULL_MENU: MenuItem[] = [
     description: 'Goat meat simmered in a sauce of spices, ginger and garlic.',
     price: 20.99,
     category: 'Lamb Curry',
-    image: 'https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1728542575492-47e02eb3305c?auto=format&fit=crop&w=800&q=80',
     tags: ['Halal', 'Gluten-Friendly', 'Chef Special'],
     spiceLevel: 2
   },
@@ -1205,7 +1205,7 @@ export const FULL_MENU: MenuItem[] = [
     description: 'Crispy potatoes glazed in a sweet and spicy honey-chilli sauce.',
     price: 13.99,
     category: 'Desi Chinese Veg',
-    image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1775039983749-aa6003c8ecf9?auto=format&fit=crop&w=800&q=80',
     tags: ['Vegetarian'],
     spiceLevel: 1
   },
